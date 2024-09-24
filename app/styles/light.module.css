@@ -1,0 +1,85 @@
+/* Navbar Starts */
+.NavbarDark {
+	/* background-color: #2d3436; */
+	color: white;
+}
+.mediaBanner {
+	background-image: url('/public/asset/banner-White.png');
+}
+@media screen and (max-width: 768px) {
+	.NavbarItem {
+		background-image: linear-gradient(
+			to right,
+			#2d3436,
+			#130f40,
+			#b53471,
+			#303952
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		color: transparent;
+	}
+}
+/* Navbar Ends */
+/* Banner Starts */
+.bannerBackgroundColor {
+	background-color: #130f40;
+}
+.bannerQuoteText {
+	color: #d1d8e0 !important;
+	font-weight: bolder;
+}
+/* Banner Ends */
+/* Our Services Starts */
+.serviceBackground {
+	background-color: #130f40;
+}
+
+.serviceCard {
+	background-color: #576574;
+}
+/* Our Services Ends */
+/* Technologies Start */
+.techBackground {
+	background-color: #130f40;
+	color: whitesmoke;
+}
+/* Technologies End */
+/* footer Start */
+.footerBackground {
+	background-image: linear-gradient(to right, #222f3e, #192a56, #353b48);
+}
+/* footer End */
+/* Contact Us Start */
+.contactUsBackground {
+	background-color: #130f40;
+}
+.contactUsForm {
+	background-color: #2f3640;
+}
+.contactUsLabel {
+	color: white;
+}
+/* Contact Us End */
+/* About Us Start*/
+.aboutBackground {
+	background-color: #130f40;
+}
+.aboutText {
+	color: white;
+}
+.aboutServiceText {
+	color: white !important;
+}
+/* About Us End*/
+/* body {
+  background-color: #222f3e;
+} */
+.commonTextGradient {
+	background-image: linear-gradient(to right, #6c5ce7, #2c3e50);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+}

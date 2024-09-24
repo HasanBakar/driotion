@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.commonTextGradient {
+	background-image: linear-gradient(to right, #6c5ce7, #2c3e50);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+}
+.commonTextGradient1 {
+	background-image: linear-gradient(
+		to right,
+		#2d3436,
+		#130f40,
+		#b53471,
+		#303952
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+}
+.commonTextGradient3 {
+	background-image: linear-gradient(to right, white, #dcdde1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+}
+
+@font-face {
+	font-family: 'navbarFont';
+	src: url('public/fonts/nav.otf') format('woff2'),
+		url('public/fonts/nav.otf') format('woff');
+	font-weight: bold;
+	font-style: bold;
+}
+@font-face {
+	font-family: 'PostNoBillsColombo-Regular';
+	src: url('public/fonts/PostNoBillsColombo-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+.navbarFont {
+	font-family: 'navbarFont';
+	background-image: linear-gradient(to right, #2c3e50, #8e44ad);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+	font-size: 3rem;
+}
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+.socialIcons {
+	background-image: linear-gradient(to right, #4cd137, #192a56);
+	opacity: 0.8;
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0 0 5px #7e22ce, 0 0 10px #7e22ce, 0 0 20px #7e22ce,
+			0 0 40px #7e22ce, 0 0 80px #7e22ce;
+	}
+	100% {
+		box-shadow: 0 0 10px #7e22ce, 0 0 20px #7e22ce, 0 0 40px #7e22ce,
+			0 0 80px #7e22ce, 0 0 160px #7e22ce;
+	}
+}
+@keyframes glow2 {
+	0% {
+		box-shadow: 0 0 5px #7e22ce, 0 0 10px #ce2222, 0 0 20px #ce6722,
+			0 0 40px #7e22ce, 0 0 80px #7e22ce;
+	}
+	100% {
+		box-shadow: 0 0 10px #03740a, 0 0 20px #7e22ce, 0 0 40px #7e22ce,
+			0 0 80px #7e22ce, 0 0 160px #7e22ce;
+	}
+}
+.animate-glow {
+	animation: glow 2s infinite alternate;
+}
+.animate-glow2 {
+	animation: glow2 2s infinite alternate;
+}
+/* Define global styles for light and dark themes */
+body.light {
+	background-image: url('/public/asset/bgImage-White.png');
+	background-repeat: repeat;
+}
+
+body.dark {
+	background-image: url('/public/asset/bgImage-Dark.png');
+	background-repeat: repeat;
+}
+
+/* styles for the toggle button */
+.toggleButton {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+@media screen and (max-width: 768px) {
+	.commonCard {
+		margin: 0 0 0 30px;
+	}
+	/* body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  } */
+}
